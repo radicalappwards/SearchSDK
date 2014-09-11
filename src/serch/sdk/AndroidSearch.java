@@ -19,8 +19,13 @@ public class AndroidSearch {
 		searchDir(pathToSDK);
 	}
 
+	/**
+	 * 
+	 * @param pathToSDK2
+	 *            should be just a path as its a recursive method.
+	 */
 	private void searchDir(String pathToSDK2) {
-		// TODO Auto-generated method stub
+		// search directory for files with keyword in java classes
 		File directory = new File("c:\\");
 		File[] files = directory.listFiles();
 
@@ -28,9 +33,9 @@ public class AndroidSearch {
 			// for every file check if its a dir or a file
 			File temp = files[index];
 			if (temp.isDirectory()) {
-				//recursive call
-			}else{
-				//file then search this file
+				// recursive call
+			} else {
+				// file then search this file
 			}
 		}
 	}
